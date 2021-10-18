@@ -1,0 +1,127 @@
+.top{
+    background-color:   #FAFAFA;
+    padding-top: 25px;
+    padding-bottom: 218px;
+}
+.view-mode{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 23px;
+    &__item{
+        margin-right: 20px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+.view-mode__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.view-mode__button.active{
+    .view-mode-icon {
+        fill: $color-primary;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.card{
+    width: 25%;
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 0 4px;
+}
+.card__image{
+    height: 203px;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        // height: 203px;
+    }
+}
+.card-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card__body{
+    font-weight: 500;
+    padding: 12px 12px 28px;
+}
+.card-list{
+    margin-bottom: 17px;
+    &__item{
+        display: flex;
+        margin-bottom: 8px;
+    }
+    &__title{
+        text-transform: capitalize;
+        margin-bottom: 7px;
+    }
+    &__icon{
+        margin-right: 6px;
+    }
+}
+.card-list__number {
+    font-size: 14px;
+}
+
+.card__upload{
+    display: flex;
+    justify-content: space-between;
+}
+.card__upload-text{
+    font-size: 14px;
+}
+.card__upload-date{
+    font-size: 12px;
+}
+.cards-view_2 {
+    display: none;
+}
+
+.cards-view_2 {
+    .card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .card__image{
+        width: 86px;
+        height: 86px;
+    }
+    .card__body {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        &__item:first-child {
+            flex-basis: 100%;
+        }
+        &__item:nth-child(2) {
+            margin-right: 18px;
+        }
+    }
+    .card-list:first-child {
+        margin-right: 160px;
+    }
+    .card__upload{
+        flex-direction: column;
+        
+    }
+    .card__upload-text{
+        margin-bottom: 10px;
+    }
+}
