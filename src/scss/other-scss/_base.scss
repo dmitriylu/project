@@ -37,6 +37,7 @@ a {
 .button-wrapper {
     display: flex;
     justify-content: center;
+    position: relative;z-index: 1;
 }
 .btn-more {
     @include font ($font-primary,11,500);
@@ -46,10 +47,22 @@ a {
     border-radius: 14px;
     padding: 8px 24px;
     transition: all 0.3s ease;
+    background-color: #fff;
     &:hover {
         box-shadow: 2px 2px 6px 1px #8080807a;
         transition: all 0.3s ease;
     }
+}
+.top-bg {
+    position: absolute;
+    // z-index: -1;
+    top: 0;
+    left: 0;
+}
+.top-bg2 {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
 }
 // p {
 //     @include text(#5f5f5f,1.5em);  
