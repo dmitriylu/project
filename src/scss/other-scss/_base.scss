@@ -10,6 +10,7 @@ body {
     @include font ($font-primary,16,400);
     min-width: 320px;
     overflow-x: hidden;
+    position: relative;
 }
 .container {
     max-width: 866px;
@@ -55,7 +56,6 @@ a {
 }
 .top-bg {
     position: absolute;
-    // z-index: -1;
     top: 0;
     left: 0;
 }
